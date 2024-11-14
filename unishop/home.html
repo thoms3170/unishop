@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University E-Commerce</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span>Uni Shop</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="products.css">Products</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="regstration.html">Register</a></li>
+            </ul>
+           
+        </nav>
+    </header>
+    <main>
+        <section class="content">
+           <h2>Welcome to the <span> University Shop </span></h2>
+           <p>Your one-stop destination for all student essentials. From books and electronics to apparel and accessories,<br> we have everything you need to succeed!</p>
+        </section>
+    </main>
+    
+    <div class="btn">
+        <button>Buy now!</button>
+        <button>Sell now!</button>
+
+    </div>
+    <footer>
+        <p>&copy; 2024 University Shop</p>
+    </footer>
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-active');
+        });
+    </script>
+</body>
+</html>

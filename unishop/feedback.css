@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/pic3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    background-color: rgb(206, 119, 6);
+    padding: 1em 0;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+.logo span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 2em;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: dodgerblue;
+    border-radius: 5px;
+}
+/* Add to existing CSS */
+
+.nav-links .active {
+    background-color: green;
+    border-radius: 5px;
+    color: white; /* This ensures the text color is different when active */
+}
+
+
+.nav-links button{
+   
+    border: 1px solid dodgerblue;
+    width: 6em;
+    padding: 8px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 10px;
+}
+
+ /* Add to existing CSS */
+
+ .feedback {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback h2 {
+    margin-bottom: 1em;
+}
+
+.feedback form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback label {
+    margin-bottom: 0.5em;
+}
+
+.feedback input, .feedback textarea {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feedback button {
+    padding: 0.5em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.feedback button:hover {
+    background-color: #575757;
+}
+footer {
+    background-color: rgb(206, 119, 6);
+    color: #fff;
+    text-align: center;
+    padding: 0.2em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 350px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-links li {
+        margin: 1em 0;
+    }
+
+    .nav-toggle {
+        display: block;
+        background-color: #333;
+        border: none;
+        color: #fff;
+        padding: 0.5em 1em;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .nav-links.nav-active {
+        display: flex;
+    }
+
+    .feedback {
+        width: 90%;
+        padding: 1em;
+        margin: 1em auto;
+        box-shadow: none;
+    }
+
+    .feedback h2 {
+        font-size: 1.5em;
+    }
+
+    .feedback input, .feedback textarea {
+        padding: 0.75em;
+    }
+
+    .feedback button {
+        padding: 0.75em;
+    }
+}

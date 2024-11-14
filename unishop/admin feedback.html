@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Feedback - University Shop</title>
+    <link rel="stylesheet" href="admin feedback.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span>Uni Shop</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="admin_feedback.html" class="active">Admin Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="admin-feedback">
+            <h2>Admin Login</h2>
+            <form id="admin-login-form">
+                <label for="admin-password">Password:</label>
+                <input type="password" id="admin-password" name="admin-password" required>
+                <button type="submit">Login</button>
+            </form>
+            <div id="feedback-list" class="hidden">
+                <h2>User Feedback</h2>
+                <!-- Feedback items will be added here dynamically -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 University Shop</p>
+    </footer>
+    <script src="js/admin.js"></script>
+</body>
+</html>

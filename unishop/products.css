@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+
+header {
+    background-color: rgb(206, 119, 6);
+    padding: 1em 0;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+.logo span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 2em;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: dodgerblue;
+    border-radius: 5px;
+}
+
+.nav-links button{
+   
+    border: 1px solid dodgerblue;
+    width: 6em;
+    padding: 8px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 10px;
+}
+.nav-links .active {
+    background-color: green;
+    border-radius: 5px; 
+    color: white; 
+    /* Ensure text color changes when active */ 
+}
+
+/* Add to existing CSS */
+
+/* General form styling for add product form */
+.add-product {
+    max-width: 400px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-product h2 {
+    margin-bottom: 1em;
+}
+
+.add-product form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-product label {
+    margin-bottom: 0.5em;
+}
+
+.add-product input, .add-product textarea {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-product button {
+    padding: 0.5em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.add-product button:hover {
+    background-color: #575757;
+}
+
+/* Product List Styling */
+.products {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.product {
+    background-color: #fff;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.product p {
+    font-size: 1em;
+    color: #333;
+}
+
+.product button {
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #575757;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-links li {
+        margin: 1em 0;
+    }
+
+    .nav-toggle {
+        display: block;
+        background-color: #333;
+        border: none;
+        color: #fff;
+        padding: 0.5em 1em;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .nav-links.nav-active {
+        display: flex;
+    }
+
+    .add-product, .login, .register {
+        width: 90%;
+        padding: 1em;
+        margin: 1em auto;
+        box-shadow: none;
+    }
+
+    .add-product h2, .login h2, .register h2 {
+        font-size: 1.5em;
+    }
+
+    .add-product input, .add-product textarea, .login input, .register input {
+        padding: 0.75em;
+    }
+
+    .add-product button, .login button, .register button {
+        padding: 0.75em;
+    }
+
+    .product-list {
+        flex-direction: column;
+    }
+
+    .product {
+        width: 90%;
+        margin: 1em auto;
+    }
+}
+
